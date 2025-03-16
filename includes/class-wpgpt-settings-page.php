@@ -113,6 +113,7 @@ class WPGPT_Settings_Page {
 				$html .= '<select id="' . esc_attr( $args['id'] ) . '" name="wpgpt_settings[' . esc_attr( $args['id'] ) . ']" class="regular-text">';
 				$html .= '<option value="gpt-3.5-turbo"' . selected( $value, 'gpt-3.5-turbo', false ) . '>GPT-3.5 Turbo</option>';
 				$html .= '<option value="gpt-4"' . selected( $value, 'gpt-4', false ) . '>GPT-4</option>';
+				$html .= '<option value="gpt-4-turbo"' . selected( $value, 'gpt-4-turbo', false ) . '>GPT-4-Turbo</option>';
 				$html .= '</select>';
 				$html .= '<p class="description">' . __( 'Select an OpenAI GPT model.', 'wpgpt' ) . '</p>';
 				break;
